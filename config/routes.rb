@@ -1,3 +1,3 @@
 Veb::Application.routes.draw do
-  resources :users, only: :create
+  resources :users
 end

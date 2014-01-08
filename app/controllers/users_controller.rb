@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   def create
-    render nothing: true
-    User.create(user_params)
+    u = User.create(user_params)
+    redirect_to user_path(u)
   end
 
   private
